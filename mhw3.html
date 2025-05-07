@@ -1,0 +1,197 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Netflix Italia - Guarda serie TV online, Guarda film online</title>
+    <link rel="stylesheet" href="HW2.css" />
+    <script src="HW2.js" defer></script>
+</head> 
+
+<body>
+
+    <header>
+        <div id='overlay'></div>
+        <nav>
+            <div id="nav-container">
+
+                <select id="lingua">
+                    <option value="it">🇮🇹 Italiano</option>
+                    <option value="en">🇺🇸 English</option>
+                </select>
+
+                <a class="button" id="login-button" href="login.html">Accedi</a>    
+                <a class="button" id="tema-button">Tema</a>
+            </div>
+        </nav>
+
+        <h1>
+            <strong>Film, serie TV e tanto <br> altro, senza limiti</strong><br/>
+            <em>A partire da 6,99 €. Disdici quando vuoi.</em><br/>
+        </h1>  
+        
+        <form id="email-form">
+            <input type="email" class="email-input" placeholder="Inserisci la tua email">
+            <button type="submit" class="email-button">Inizia</button>
+        </form>
+
+    </header>
+    <section>
+    
+    <div class="promo-banner">
+    <img id="promo-img" src="https://static.vecteezy.com/system/resources/thumbnails/057/197/442/small/enjoying-freshly-popped-popcorn-in-a-red-theater-with-a-festive-atmosphere-and-delicious-aroma-filling-the-air-photo.jpeg" >
+    <p><strong>Tutto ciò che ami di Netflix a soli 6,99 €.</strong><br> Approfitta del nostro piano con pubblicità: è il più conveniente.</p>
+    <button class="promo-button">Scopri di più</button>
+</div>
+
+
+<h1>Cerca un film</h1>
+<input type="text" id="searchInput" placeholder="Inserisci il nome del film..." />
+<button id="searchButton">Cerca</button>
+
+<div id="results"></div>
+
+
+<section class="film-popolari">
+    <h2>Film Popolari</h2>
+    <div id="movies-container" class="movies-container">
+    </div>
+</section>
+
+
+<section class="trend">
+    <h2>I titoli del momento</h2>
+    <div class="titoli">
+      <div class="titoli-container">
+        <img
+          class="locandina"
+          src="https://www.almanaccocinema.it/wp-content/uploads/2025/03/1741863691901-1.jpeg"
+          data-titolo=" ADOLESCENZE"
+          data-anno="2025"
+          data-generi="Thriller, Serie"
+          data-descrizione="Quando un tredicenne è accusato dell'omicidio di una compagna di classe, la sua famiglia, la terapeuta e il detective incaricato del caso si chiedono: cosa è successo veramente?"
+      />
+        <img
+          class="locandina"
+          src="https://www.lafeltrinelli.it/images/9791281710504_0_0_536_0_75.jpg"
+          data-titolo="Il ragazzo dai pantaloni rosa"
+          data-anno="2024"
+          data-generi="Dramma, Romance"
+          data-descrizione="In questo film drammatico basato su una tragica storia, vera un giovane di talento è preso di mira con ferocia dai compagni di classe quando indossa un paio di pantaloni rosa."
+    />
+        <img
+          class="locandina"
+          src="https://movieplayer.net-cdn.it/images/2025/02/27/la-lista-dei-miei-deisideri.jpg"
+          data-titolo="La lista dei miei desideri"
+          data-anno="2025"  
+          data-generi="Romantici,Drammi"
+          data-descrizione="Quando la madre la spinge a completare la lista dei desideri scritta da adolescente, una giovane donna scopre segreti di famiglia, trova l'amore e riscopre se stessa."
+    />
+    <img
+          class="locandina"
+          src="https://pad.mymovies.it/filmclub/2021/12/084/locandinapg3.jpg"
+          data-titolo="La lista dei miei desideri"
+          data-anno="2025"
+          data-generi="Romantici,Drammi"
+          data-descrizione="Quando la madre la spinge a completare la lista dei desideri scritta da adolescente, una giovane donna scopre segreti di famiglia, trova l'amore e riscopre se stessa."
+    
+    />
+  </section>
+  
+    
+    <section class="motivi">
+    <div class="motivi-card">
+        <h3>Goditi Netflix sulla tua TV</h3>
+        <p>Guarda Netflix su smart TV, PlayStation, Xbox, Chromecast, Apple TV e molti altri dispositivi.</p>
+    </div>
+    <div class="motivi-card">
+        <h3>Scarica le tue serie da guardare offline</h3>
+        <p>Salva facilmente i tuoi preferiti così avrai sempre qualcosa da guardare.</p>
+    </div>
+    <div class="motivi-card">
+        <h3>Guarda Netflix ovunque</h3>
+        <p>Cellulare, tablet, laptop e TV: scegli tu cosa usare per guardare in streaming film e serie TV senza limiti.</p>
+    </div>
+    <div class="motivi-card">
+    <h3>Crea profili per i bambini</h3>
+    <p>I bambini scoprono nuove avventure in compagnia dei loro personaggi preferiti in uno spazio tutto loro già incluso nel tuo abbonamento.</p>
+    </div>
+    
+</section>
+
+<section class="faq-section">
+    <h2>Domande frequenti</h2>
+    <div class="faq-container">
+        <div class="faq-item">
+            <button class="faq-question">Cos'è Netflix? <span class="più">+</span></button>
+            <div class="faq-answer">Netflix è un servizio di streaming che offre una vasta varietà di serie TV, film, anime, documentari e molto altro.</div>
+        </div>
+        <div class="faq-item">
+            <button class="faq-question">Quanto costa Netflix? <span class="più">+</span></button>
+            <div class="faq-answer">I piani partono da 6,99 € al mese con pubblicità, fino a 17,99 € per il piano premium.</div>
+        </div>
+        <div class="faq-item">
+            <button class="faq-question">Dove posso guardare Netflix? <span class="più">+</span></button>
+            <div class="faq-answer">Puoi guardare Netflix su smartphone, tablet, Smart TV, laptop o dispositivi di streaming.</div>
+        </div>
+        <div class="faq-item">
+            <button class="faq-question">Come posso disdire? <span class="più">+</span></button>
+            <div class="faq-answer">Puoi disdire il tuo abbonamento in qualsiasi momento dalle impostazioni del tuo account.</div>
+        </div>
+        <div class="faq-item">
+            <button class="faq-question">Cosa posso guardare su Netflix? <span class="più">+</span></button>
+            <div class="faq-answer">Netflix offre migliaia di film, serie TV, documentari e contenuti originali esclusivi.</div>
+        </div>
+        <div class="faq-item">
+            <button class="faq-question">Netflix è adatto ai bambini? <span class="più">+</span></button>
+            <div class="faq-answer">Sì, Netflix offre un'area dedicata ai bambini con contenuti sicuri e supervisionati.</div>
+        </div>
+    </div>
+</section>
+
+<section class="signup-section">
+    <p>Vuoi guardare Netflix? Inserisci l'indirizzo email per abbonarti o riattivare il tuo abbonamento.</p>
+    <div class="signup-form">
+        <input type="email" placeholder="Indirizzo email">
+        <button class="signup-button">Inizia ></button>
+    </div>
+</section>
+
+<div class="footer">
+    <p>Domande? Chiama il numero 800669767</p>
+    <div class="footer-container">
+        <div class="footer-column">
+            <p>Domande frequenti</p>
+            <p>Rapporti con gli investitori</p>
+            <p>Come guardare Netflix</p>
+            <p>Informazioni sull'azienda</p>
+            <p>Note legali</p>
+        </div>
+        <div class="footer-column">
+            <p>Centro assistenza</p>
+            <p>Opportunità di lavoro</p>
+            <p>Condizioni di utilizzo</p>
+            <p>Contattaci</p>
+            <p>Solo su Netflix</p>
+        </div>  
+        <div class="footer-column">
+            <p>Account</p>
+            <p>Riscatta carte regalo</p>
+            <p>Privacy</p>
+            <p>Test di velocità</p>
+            <p>Preferenze per la pubblicità</p>
+        </div>
+        <div class="footer-column">
+            <p>Media Center</p>
+            <p>Acquista carte regalo</p>
+            <p>Preferenze per i cookie</p>
+            <p>Garanzia legale</p>
+        </div>
+    </div>
+    <select class="language">
+        <option>Italiano</option>
+    </select>
+    <p>Netflix Italia</p>
+</div>
+</body>
+</html>
